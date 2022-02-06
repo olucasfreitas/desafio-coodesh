@@ -1,0 +1,65 @@
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 0.75em;
+
+  mat-form-field {
+    margin: 15px 30px 0 0;
+    .mat-input-element {
+      color: white;
+    }
+  }
+}
+.logo-and-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  border-bottom: 1px groove white;
+  color: white;
+  margin-bottom: 10px;
+  p {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 15px;
+    mat-icon {
+      height: fit-content;
+      width: fit-content;
+      font-size: 3.5em;
+      border: 2px solid gray;
+      border-radius: 50px;
+      padding: 20px;
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+
+  .load-more-button {
+    margin: 20px 0;
+    color: white;
+  }
+
+  mat-spinner {
+    margin: 20px 0;
+  }
+}

@@ -1,1 +1,29 @@
-<p>search-page works!</p>
+<div class="top-bar">
+  <form [formGroup]="searchForm" (ngSubmit)="search()">
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input matInput placeholder="..." formControlName="name" />
+      <button mat-icon-button matSuffix type="submit">
+        <mat-icon color="primary">search</mat-icon>
+      </button>
+    </mat-form-field>
+  </form>
+  <mat-form-field appearance="outline">
+    <mat-label>Sort</mat-label>
+    <mat-select>
+      <mat-option value="Mais antigas" (click)="sortFromOlder()"> Mais antigas </mat-option>
+      <mat-option value="Mais novas" (click)="sortFromNewer()"> Mais novas </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="logo-and-title">
+  <span class="icon">
+    <mat-icon> rocket_launch </mat-icon>
+  </span>
+  <p>Space flight news</p>
+</div>
+<div class="cards">
+  <app-info-card *ngFor="let article of articles" [articleInfo]="article"></app-info-card>
+  <mat-spinner *ngIf="loading"></mat-spinner>
+  <button mat-flat-button class="load-more-button" color="accent" (click)="loadMoreArticles()">Carregar mais</button>
+</div>
