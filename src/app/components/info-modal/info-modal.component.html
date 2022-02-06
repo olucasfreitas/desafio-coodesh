@@ -1,1 +1,11 @@
-<p>info-modal works!</p>
+<div class="container">
+  <img [src]="article.imageUrl" alt="" />
+  <div class="info">
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.publishedAt }}</p>
+    <p>
+      {{ article.summary }}
+    </p>
+    <button mat-flat-button class="see-more-button" (click)="goToWebsite()" color="primary">Ir para website</button>
+  </div>
+</div>
