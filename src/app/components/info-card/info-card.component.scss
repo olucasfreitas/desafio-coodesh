@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0 0 20px 0;
+
+  img {
+    width: 250px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 60%;
+    h3,
+    p {
+      margin: 0;
+      color: white;
+    }
+
+    h3 {
+      margin: 10px 0;
+    }
+    .date-and-site {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+
+      p {
+        &:first-child {
+          font-size: 0.75em;
+        }
+        &:last-child {
+          font-weight: 500;
+          padding: 2px 5px;
+          background-color: #302e53;
+          border: 1px solid gray;
+        }
+      }
+    }
+
+    p {
+      text-align: start;
+      margin-bottom: 10px;
+    }
+
+    .see-more-button {
+      color: white;
+    }
+  }
+}

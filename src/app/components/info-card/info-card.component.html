@@ -1,1 +1,14 @@
-<p>info-card works!</p>
+<div class="container">
+  <img [src]="articleInfo.imageUrl" alt="" />
+  <div class="info">
+    <h3>{{ articleInfo.title }}</h3>
+    <div class="date-and-site">
+      <p>{{ articleInfo.publishedAt }}</p>
+      <p>{{ articleInfo.newsSite }}</p>
+    </div>
+    <p>
+      {{ articleInfo.summary }}
+    </p>
+    <button mat-flat-button class="see-more-button" color="primary" (click)="openModal()">Ver mais</button>
+  </div>
+</div>
