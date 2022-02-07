@@ -27,4 +27,7 @@ Execute `yarn test ou npm test` para que seja aberto um navegador para execuçã
 
 Execute `yarn test:ci ou npm test:ci` para que seja gerada a pasta `coverage`, após navegue até a pasta, dentro de `coverage/nome_do_projeto/index.html`
 
+##Link da apresentação
+https://www.loom.com/embed/250752ca98664df4a0ef529a581bb4ce
+
 > This is a challenge by [Coodesh](https://coodesh.com/)
